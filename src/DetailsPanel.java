@@ -23,39 +23,39 @@ public class DetailsPanel extends JPanel {
 	public DetailsPanel() {		
 		this.setLayout(new GridBagLayout());
 		
-        cns = new GridBagConstraints(); 
-        cns.insets = new Insets(10, 0, 0, 0);
+		cns = new GridBagConstraints(); 
+        	cns.insets = new Insets(10, 0, 0, 0);
         
-        //Adding elements to the GridBagLayout
-        setGridBagConstraints(0, 1, 0.007);
-        add(new JLabel("Panel Coordinates:"), cns);
-        
-        setGridBagConstraints(1, 0, 0.007);
-        panelCoordinates = new JTextField();
-        panelCoordinates.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+		//Adding elements to the GridBagLayout
+		setGridBagConstraints(0, 1, 0.007);
+		add(new JLabel("Panel Coordinates:"), cns);
+
+		setGridBagConstraints(1, 0, 0.007);
+		panelCoordinates = new JTextField();
+		panelCoordinates.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		panelCoordinates.setEditable(false);
 		add(panelCoordinates, cns);
 		
 		rowNum++;
 		setGridBagConstraints(0, 0.5, 0.007);
-        add(new JLabel("Complex Coordinates:"), cns);
-        
-        setGridBagConstraints(1, 0.5, 0.007);
-        complexCoordinates = new JTextField();
-        complexCoordinates.setBorder(javax.swing.BorderFactory.createEmptyBorder());
+		add(new JLabel("Complex Coordinates:"), cns);
+
+		setGridBagConstraints(1, 0.5, 0.007);
+		complexCoordinates = new JTextField();
+		complexCoordinates.setBorder(javax.swing.BorderFactory.createEmptyBorder());
 		complexCoordinates.setEditable(false);
 		add(complexCoordinates, cns);
 		
 		rowNum++;
 		setGridBagConstraints(0, 0.2, 0.007);
 		iterations = new JLabel("Max Iterations: 1000");
-        add(iterations, cns); 
-        
-        setGridBagConstraints(1, 0.8, 0.007);
-        slider = new JSlider(0, 10000, 1000);
-        slider.setMajorTickSpacing(1000);
-        slider.setMinorTickSpacing(500);
-        slider.setPaintTicks(true);
+		add(iterations, cns); 
+
+		setGridBagConstraints(1, 0.8, 0.007);
+		slider = new JSlider(0, 10000, 1000);
+		slider.setMajorTickSpacing(1000);
+		slider.setMinorTickSpacing(500);
+		slider.setPaintTicks(true);
 		add(slider, cns);
 		
 		JPanel gridXCoordinates = new JPanel();
